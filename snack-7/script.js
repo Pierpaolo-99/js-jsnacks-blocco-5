@@ -21,3 +21,21 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+
+// extended
+const studentsDate = students.find((element) => {
+  if (element.id === 2){
+    return true
+  }
+  return false
+})
+
+console.log(studentsDate);
+
+// abbreviated
+
+const studentsDates = students.find( element => element.id === 2)
+
+console.log(studentsDates);
+
